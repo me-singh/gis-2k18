@@ -49,4 +49,11 @@ public class HomeFragment extends Fragment {
         announcementsRecyclerView.setAdapter(announcementsRecyclerViewAdapter);
         return v;
     }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        getActivity().setTitle("Home");
+    }
 }
